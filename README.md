@@ -1,0 +1,2 @@
+# Projekt_Zaliczeniowy_Tech_Int_Bugajski_Morawiec
+Projekt o pingiwnach z madagaskaru i normalnych pingiwnach
