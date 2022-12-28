@@ -1,0 +1,54 @@
+header {
+  background-image: url("../images/iceberg2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #3097bf;
+  background-blend-mode: multiply;
+  color: var(--white-color);
+  padding-top: 2rem;
+  padding-bottom: 20rem;
+  width: 100%;
+  margin: auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+.navbar__logo {
+  position: relative;
+}
+.navbar__logo::after {
+  content: "Pingwiny z Madagaskaru";
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+}
+.navbar__logo img {
+  height: 6rem;
+}
+.navbar__list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.navbar__list li {
+  border: 1px solid var(--white-color);
+  opacity: 0.8;
+  padding: 0.5rem;
+  border-radius: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+header p {
+  font-size: 1.2rem;
+}
