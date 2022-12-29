@@ -6,8 +6,8 @@ header {
   background-color: #3097bf;
   background-blend-mode: multiply;
   color: var(--white-color);
-  padding-top: 2rem;
-  padding-bottom: 20rem;
+  padding-top: 1rem;
+  padding-bottom: 24rem;
   width: 100%;
   margin: auto;
 }
@@ -15,10 +15,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
+  padding: 1rem 3rem;
 }
 .navbar__logo {
   position: relative;
+  font-size: 1.4rem;
+  font-style: italic;
 }
 .navbar__logo::after {
   content: "Pingwiny z Madagaskaru";
@@ -36,13 +38,15 @@ header {
 }
 .navbar__list li {
   border: 1px solid var(--white-color);
-  opacity: 0.8;
   padding: 0.5rem;
   border-radius: 0.5rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.navbar__list li:hover {
+  background-color: #f8f9fa21;
 }
 header h1 {
   font-size: 2rem;
@@ -51,4 +55,20 @@ header h1 {
 }
 header p {
   font-size: 1.2rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+  header {
+    padding-bottom: 6rem;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 4rem;
+  }
+  .navbar__list {
+    flex-direction: column;
+  }
+  .navbar__list li {
+    opacity: 1;
+  }
 }

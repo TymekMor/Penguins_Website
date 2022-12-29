@@ -1,0 +1,35 @@
+.gallery {
+  background-color: var(--black-color);
+}
+.gallery__mozaic {
+  display: grid;
+  padding: 5rem 0rem;
+  width: 80%;
+  margin: auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+  gap: 1rem;
+}
+.gallery__element {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 200ms scale;
+  border-radius: 1rem;
+}
+.gallery__element:hover {
+  scale: 1.05;
+}
+
+@media only screen and (min-width: 1000px) {
+  .tall {
+    grid-row: span 2 / auto;
+  }
+  .wide {
+    grid-column: span 2 / auto;
+  }
+}

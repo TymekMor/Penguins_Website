@@ -16,14 +16,8 @@ ul {
   --black-color: #070606;
   --white-color: #f8f9fa;
   --orange-color: #f2811d;
-}
-body {
-  background: linear-gradient(0deg, #3097bf, var(--white-color));
+  --blue-color: #3097bf;
 }
 main {
-  width: 80%;
-  padding: 2rem 0;
   margin: auto;
-  display: grid;
-  row-gap: 3rem;
 }
