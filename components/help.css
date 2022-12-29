@@ -1,0 +1,40 @@
+.help {
+  background: linear-gradient(var(--black-color), var(--blue-color));
+  color: white;
+  padding: 5rem 0;
+}
+.help > div {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 1.5rem;
+  gap: 2rem;
+}
+.help ul {
+  display: grid;
+  gap: 1rem;
+}
+.help a {
+  text-decoration: underline;
+  color: var(--white-color);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: 200ms opacity;
+}
+.help a:hover {
+  opacity: 0.9;
+}
+.help li:first-child {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+  .help p {
+    display: none;
+  }
+  .help div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

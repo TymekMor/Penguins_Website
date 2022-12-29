@@ -1,6 +1,7 @@
 .penguins {
   padding: 8rem 0rem;
   background: linear-gradient(180deg, var(--blue-color), var(--black-color));
+
   display: flex;
   flex-direction: column;
   justify-content: center;

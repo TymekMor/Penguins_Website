@@ -21,3 +21,33 @@ ul {
 main {
   margin: auto;
 }
+footer {
+  background-color: var(--black-color);
+  height: 300px;
+  color: var(--white-color);
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 177px;
+  transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+  fill: #3097bf;
+}

@@ -22,7 +22,7 @@
   border-radius: 1rem;
 }
 .gallery__element:hover {
-  scale: 1.05;
+  scale: 1.04;
 }
 
 @media only screen and (min-width: 1000px) {
